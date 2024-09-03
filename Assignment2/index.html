@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <form class="form">
+        <p class="title">Register</p>
+        <p class="message">Signup now and get full access to our app.</p>
+        <div class="flex">
+          <label>
+            <input
+              class="input"
+              type="text"
+              placeholder=""
+              required=""
+              id="firstname"
+            />
+            <span>Firstname</span>
+          </label>
+
+          <label>
+            <input
+              class="input"
+              type="text"
+              placeholder=""
+              required=""
+              id="lastname"
+            />
+            <span>Lastname</span>
+          </label>
+        </div>
+
+        <label>
+          <input
+            class="input"
+            type="email"
+            placeholder=""
+            required=""
+            id="email"
+          />
+          <span>Email</span>
+        </label>
+
+        <label>
+          <input
+            class="input"
+            type="number"
+            placeholder=""
+            required=""
+            id="number"
+          />
+          <span>Phone Number</span>
+        </label>
+        <label>
+          <input
+            class="input"
+            type="text"
+            placeholder=""
+            required=""
+            id="address"
+          />
+          <span>Address</span>
+        </label>
+        <label>
+          <input
+            class="input"
+            type="number"
+            placeholder=""
+            required=""
+            id="age"
+          />
+          <span>Age</span>
+        </label>
+        <button type="button" onclick="sub()" class="submit">Submit</button>
+        <p class="signin">Already have an acount ? <a href="#">Signin</a></p>
+      </form>
+
+      <div id="disp"></div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
