@@ -4,7 +4,7 @@ if(score > 100){
     alert("Too good for this school, i guess.🤣")
     
 }else if(score >= 70 && score <= 100){
-    alert("Excellent, You are a genius!👍")
+    alert("Excellent, You've got an A!👍")
 
 }else if(score >= 60 && score <= 69 ){
     alert("Very Good, you've got a B 😀")
