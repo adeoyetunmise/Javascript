@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Transactions.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="logo">MyApp</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#transactions">Transactions</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#settings">Settings</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div>
+            <h1>Our Services</h1>
+            <ul id="list">
+                <a href="#">
+                    <li onclick="buyData()">Buy Data</li>
+                </a>
+                <a href="#">
+                    <li onclick="transfer()">Transfer</li>
+                </a>
+                <a href="#">
+                    <li onclick="borrowAirtime()">Borrow Airtime</li>
+                </a>
+                <a href="#">
+                    <li onclick="airtimeRecharge()">Recharge</li>
+                </a>
+                <a href="#">
+                    <li onclick="checkBalance()">Check Balance</li>
+                </a>
+            </ul>
+        </div>
+        <img src="receipt.png" alt="" srcset="" id="image">
+    </div>
+    <script src="Transactions.js"></script>
+</body>
+
+</html>
