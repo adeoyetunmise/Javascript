@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: white;
+}
+.cell{
+    width: 75px;
+    height: 75px;
+    border: 2px solid white;
+    line-height: 75px;
+    border-radius: 10px;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 0 rgb(223, 217, 217);
+    
+}
+
+#gameContainer{
+    font-family: 'permanent marker', cursive;
+    text-align: center;
+}
+
+#cellContainer{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 265px;
+    margin: auto;
+    gap: 15px;
+    color: white;
+   
+}
+
+#statusText{
+    color: white;
+}

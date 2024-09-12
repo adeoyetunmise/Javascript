@@ -9,46 +9,21 @@
 </head>
 
 <body>
-    <h1 id="register">Register for freebees</h1>
-    <p class="message"></p>
-    <div class="form">
-        <div>
-            <label for="">Name:</label><br>
-            <input type="text" placeholder="John Doe" id="inp">
-            <br>
-            <label for="">Age:</label><br>
-            <input type="number" placeholder="Enter your age" id="inp">
-            <br>
-            <label for="">Email:</label><br>
-            <input type="email" placeholder="example@mail.com" id="inp">
-            <br>
-            <label for="">Marital Status:</label>
-            <select name="">
-                <option value="" selected disabled hidden>Select</option>
-                <option value="">Single</option>
-                <option value="">Married</option>
-            </select>
+    <h1 id="register">What's your Todo like today?</h1>
+    <p class="msg"></p>
+    <form id="task-form">
+        <div class="input-div">
+            <label for="name">Task:</label>
+            <input type="text" name="task" id="task">
         </div>
 
-        <div class="gender">
-            <h2>Gender</h2>
-            <input type="radio" name="gender">
-            <label for="">Female</label><br>
-
-            <input type="radio" name="gender">
-            <label for="">Male</label><br>
+        <div class="input-buttons">
+            <input type="submit"> <input type="reset">
         </div>
+    </form>
+    <div id="info"></div>
 
-        <div class="btn">
-            <button>Submit</button>
-            <button>Reset</button>
-        </div>
-
-
-
-    </div>
-
-    <script src="DOM.js"></script>
+    <script src="classwork.js"></script>
 </body>
 
 </html>
