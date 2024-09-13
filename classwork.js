@@ -9,7 +9,8 @@ form.addEventListener('submit', function (e) {
 
     if (task.value !== ""){
         const li = document.createElement('li');
-        li.innerHTML = `${task.value} <button class="delete">X</button>`
+        li.innerHTML = `${task.value}  
+        <button class="delete">X</button>`
         li.classList.add('task');
 
         li.addEventListener('click', function (){
@@ -26,6 +27,7 @@ form.addEventListener('submit', function (e) {
             info.removeChild(li)
 
         })
+
     }else{
         message.innerText = `Please enter a task!! `
         message.style.color = 'red';

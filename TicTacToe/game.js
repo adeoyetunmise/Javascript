@@ -61,17 +61,29 @@ function checkWinner(){
             continue;
         }
 
-        if(cellA == cellB $$ cellB == cellC){
+        if(cellA == cellB && cellB == cellC){
             roundWon = true;
             break;
         }
 
     }
 
-    if
+    if(roundWon){
+        statusText.textContent = `${currentPlayer} wins`
+        running = false;
+    }else if(!options.includes("")){
+        statusText.textContent = `Draw!`
+        running = false
+    }else{
+        changePlayer();
+    }
 
 }
 
 function restartGame(){
-
+    currentPlayer = "X"
+    options = ["", "", "", "", "", "", "", "", "",];
+    statusText.textContent = `${currentPlayer}'s turn`
+    cells.forEach(cell => cell.textContent = "");
+    running = true;
 }
