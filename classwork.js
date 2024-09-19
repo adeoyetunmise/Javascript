@@ -41,3 +41,38 @@ form.addEventListener('reset', function (e){
         task.value = ""
     }
 })
+
+// fetching from API and mapping through
+const user = document.querySelector('#users')
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(response => response.json())
+.then(data =>{
+    console.log(data)
+    const users = data.map(dataElement => {
+        return `<li>${dataElement.name}, ${dataElement.email}</li>`
+    })
+
+    user.innerHTML = users
+})
+.catch(err => console.log(err));
+
+
+// async and await
+// const fetchUsers = async () => {
+//     try {
+//         const res = await fetch('https://jsonplaceholder.typicode.com/users')
+//         const data = await res.json()
+//         console.log(data);
+        
+//         const users = data.map(dataElement => {
+//             return `<li>${dataElement.name}, ${dataElement.email}</li>`
+//         })
+    
+//         user.innerHTML = users
+//     }catch(error){
+        
+
+//     };
+    
+// }
+// fetchUsers()

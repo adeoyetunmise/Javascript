@@ -13,6 +13,33 @@ body{
     
 }
 
+.input-div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-div label{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.input-div input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-div input:focus{
+    border-color: #1564ee;
+    outline: none;
+}
+
+.input-div input::placeholder{
+    font-size: 12px;
+    color: #ccc;
+}
 .cell{
     width: 75px;
     height: 75px;

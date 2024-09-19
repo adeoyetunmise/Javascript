@@ -11,6 +11,16 @@
 <body>
     <div id="gameContainer">
         <h1>Tic-Tac-Toe</h1>
+
+        <div class="input-div">
+            <label for="name">Player1:</label>
+            <input type="text" placeholder="Enter your name" id="player1">
+             
+            <label for="name">Player2:</label>
+            <input type="text"  placeholder="Enter your name" id="player2">        
+        </div>
+        <button id="startBtn">Start</button>
+        <h2 id="statusText"></h2>
         <div id="cellContainer">
             <div cellIndex="0" class="cell"></div>
             <div cellIndex="1" class="cell"></div>
@@ -22,7 +32,7 @@
             <div cellIndex="7" class="cell"></div>
             <div cellIndex="8" class="cell"></div>
         </div>
-        <h2 id="statusText"></h2>
+       
         <button id="restartBtn">Restart</button>
     </div>
 
